@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Deret</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Kalkulator Deret</h1>
+        <div class="form-group">
+            <label for="type">Tipe Deret</label>
+            <select id="type">
+                <option value="arithmetic">Aritmetika</option>
+                <option value="geometric">Geometri</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="a1">Suku Pertama (a1)</label>
+            <input type="number" id="a1" placeholder="Masukkan suku pertama">
+        </div>
+        <div class="form-group" id="difference-group">
+            <label for="difference">Beda Tetap (d)</label>
+            <input type="number" id="difference" placeholder="Masukkan beda tetap">
+        </div>
+        <div class="form-group" id="ratio-group" style="display: none;">
+            <label for="ratio">Rasio (r)</label>
+            <input type="number" id="ratio" placeholder="Masukkan rasio">
+        </div>
+        <div class="form-group">
+            <label for="n">Suku ke-n</label>
+            <input type="number" id="n" placeholder="Masukkan nilai n">
+        </div>
+        <button onclick="calculate()">Hitung</button>
+        <div class="result">
+            <h2>Hasil</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
